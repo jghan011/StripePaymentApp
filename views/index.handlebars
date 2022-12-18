@@ -1,0 +1,36 @@
+<section class="py-2">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h1 class="display-3 mt-3 pt-5">
+        Web Development Ebook
+      </h1>
+      <p class="lead">
+        learn Web Development Front to back
+      </p>
+       <form action="/charge" method="POST"> 
+
+      <script
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key="pk_test_51MFtI7IeM4CQvisim9gPobZHElfKzpGwRnlmrCYhJ4UWWjD5kGfBsjuZYOiMeRI4ORbtWIIJassgQHmUMgQvl3k700kyLdLzTW"
+        data-amount="2500"
+        data-name="Web Development Ebook"
+        data-description="Ebook written by Brad Traversy"
+        data-image="/img/marketplace.png"
+        data-locale="auto"
+        data-zip-coed="true"
+      >
+      // will displat stripe button and and when you click on the stripe button a large form to pay will appear with all the book info descrbed in the data
+        </script>
+
+         <script>
+          // Hide default stripe button
+          document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+        </script>
+    <button type="submit" class="button btn btn-outline-dark text-white btn-lg">purchase for $25.00</button>
+    </div>
+    <div class="col-md-6">
+      <img src="/img/book.png" alt="" class="img-fluid" />
+    </div>
+  </div>
+</section>
